@@ -1,0 +1,102 @@
+/* -------------------------------
+        共通
+--------------------------------*/
+
+body {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px;
+  background-color: rgb(245, 255, 255);
+}
+
+button {
+  background-color: rgb(60, 125, 255);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px;
+  /* margin-bottom: 20px; */
+}
+
+button:nth-last-child(2) {
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: rgba(60, 125, 255, 0.8);
+  cursor: pointer;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.caution {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.center_position {
+  text-align: center;
+}
+
+.required::before {
+  content: "*";
+  color: red;
+  vertical-align: middle;
+}
+
+/* --------------------------------
+        確認画面
+---------------------------------*/
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+th,td {
+  border: solid 1px #ccc;
+  padding: 8px;
+}
+
+th {
+  width: 150px;
+  height: 35px;
+  text-align: left;
+  font-weight: normal;
+  background-color: rgba(140, 197, 240, 0.5);
+}
+
+td {
+  width: 250px;
+  text-align: center;
+}
