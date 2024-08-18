@@ -12,9 +12,8 @@ $password = h($_POST['pass']);
 //入力されたメールアドレスをもとにパスワード取得→入力されたパスワードと一致するか判定
 $user = $dbm->getUserInfoByEmail($email);
 if($user) {
-    echo $user['password'];
-    if (password_verify($password, $user['password'])) {
-        $_SESSION['user_name'] = $user['user_name'];
+    if (password_verify($password, $user[0]['password'])) {
+        $_SESSION['user_name'] = $user[0]['user_name'];
         header("Location: success.php");
         exit;
     } else {
